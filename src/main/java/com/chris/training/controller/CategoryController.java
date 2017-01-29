@@ -1,6 +1,7 @@
 package com.chris.training.controller;
 
 import com.chris.training.repository.CategoryRepository;
+import com.chris.training.repository.GifRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -15,6 +16,9 @@ public class CategoryController {
     @Autowired
     private CategoryRepository categoryRepository;
 
+    @Autowired
+    GifRepository gifRepository;
+
     //@RequestMapping(value = "/categories", method = {RequestMethod.POST})
     @GetMapping("/categories")
     public String listCategories(ModelMap modelMap) {
@@ -25,6 +29,7 @@ public class CategoryController {
     @GetMapping("/category/{id}")
     public String categoryDetails(@PathVariable int id, ModelMap modelMap) {
         modelMap.put("category", categoryRepository.findById(id));
+        modelMap.put("gifs", gifRepository.findByCategoryId(id));
         return "category";
     }
 

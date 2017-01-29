@@ -15,13 +15,13 @@ public class GifController {
     private GifRepository gifRepository;
 
     @GetMapping("/")
-    public String listGifs(ModelMap modelMap){
+    public String listGifs(ModelMap modelMap) {
         modelMap.addAttribute("gifs", gifRepository.getAllGifs());
         return "home";
     }
 
     @GetMapping("/gif")
-    public String gifDetails(ModelMap modelMap){
+    public String gifDetails(ModelMap modelMap) {
         // co sie ma dziac - akcaj, zmienna z kontrollera do widoku
         Gif gif = gifRepository.findByName("android-explosion");
         // model map to hash mapa
@@ -30,13 +30,13 @@ public class GifController {
     }
 
     @GetMapping("/favorites")
-    public String favorites(ModelMap modelMap){
+    public String favorites(ModelMap modelMap) {
         modelMap.addAttribute("gifs", gifRepository.getFavorites());
         return "favorites";
     }
 
     @GetMapping("/gif/{name}")
-    public String gifDetails(@PathVariable String name, ModelMap modelMap){
+    public String gifDetails(@PathVariable String name, ModelMap modelMap) {
         modelMap.put("gif", gifRepository.findByName(name));
         return "gif-details";
     }
