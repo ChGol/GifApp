@@ -13,8 +13,14 @@ public class GifController {
     @Autowired
     private GifRepository gifRepository;
 
+    //@GetMapping("/")
+    //public String listGifs() {
+    //    return "home";
+    //}
+
     @GetMapping("/")
-    public String listGifs() {
+    public String listGifs(ModelMap modelMap){
+        modelMap.addAttribute("gifs", gifRepository.getAllGifs());
         return "home";
     }
 

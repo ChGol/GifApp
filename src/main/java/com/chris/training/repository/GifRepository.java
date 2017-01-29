@@ -10,9 +10,9 @@ import java.util.List;
 public class GifRepository {
 
     private static List<Gif> All_GIFS = Arrays.asList(new Gif("android-explosion", "michalos", false),
-            new Gif("android-explosion", "Chris", false),
+            new Gif("cowboy-coder", "Chris", false),
             new Gif("ben-and-mike", "Chris", false),
-            new Gif("books-dominos", "Magda", false),
+            new Gif("book-dominos", "Magda", false),
             new Gif("compiler-bot", "Magda", false),
             new Gif("infinite-andrew", "Magda", false));
 
@@ -24,5 +24,9 @@ public class GifRepository {
                 return null;
         }
         return null;
+    }
+
+    public List<Gif> getAllGifs(){
+        return All_GIFS;
     }
 }
