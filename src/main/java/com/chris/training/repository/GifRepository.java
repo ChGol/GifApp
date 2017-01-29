@@ -11,7 +11,7 @@ import java.util.List;
 public class GifRepository {
 
     private static List<Gif> All_GIFS = Arrays.asList(
-            new Gif("android-explosion", "michalos", false, 1),
+            new Gif("android-explosion", "michalos", true, 1),
             new Gif("cowboy-coder", "Chris", true, 1),
             new Gif("ben-and-mike", "Chris", false, 2),
             new Gif("book-dominos", "Magda", false, 2),
