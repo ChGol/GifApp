@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+font-family: 'Bitter', serif;
 
 body {
-    font-family: 'varela round', sans-serif;
+font-family: 'varela round', sans-serif;
 }
+
 
 nav {
     background-color: #896bb3;
@@ -10,7 +12,7 @@ nav {
 }
 
 nav .brand-logo, nav ul li.active a {
-    color: #fefefe;
+    color: #f0f0f0;
 }
 
 nav ul li a {
