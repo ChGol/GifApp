@@ -7,12 +7,12 @@ font-family: 'varela round', sans-serif;
 
 
 nav {
-    background-color: #896bb3;
+    background-color: #541460;
     box-shadow: none;
 }
 
 nav .brand-logo, nav ul li.active a {
-    color: #f0f0f0;
+    color: #F9D471;
 }
 
 nav ul li a {
@@ -28,12 +28,12 @@ nav ul li.active, nav ul li:hover {
 }
 
 #mobile-nav, #mobile-nav li.active, #mobile-nav li:hover {
-    background-color: #37333d;
+    background-color: #69F0AE;
 }
 
 #mobile-nav li a {
     font-size: 1.3rem;
-    color: #906fbc;
+    color: #69F0AE;
 }
 
 #mobile-nav li.active a {
@@ -60,7 +60,7 @@ nav ul li.active, nav ul li:hover {
 .search-bar .input-field input {
     border: none;
     margin: 0;
-    padding-left: 1rem;
+    padding-left: 2rem;
     font-size: 1.1rem;
 }
 
@@ -256,11 +256,13 @@ nav ul li.active, nav ul li:hover {
         margin-top: 0;
         border: none;
         border-radius: 0;
+
     }
 
     .search-bar .input-field input {
         height: 4rem;
         padding-left: 1.5rem;
+
     }
 
     .search-bar .input-field input ~ .material-icons, .search-bar .input-field input:focus ~ .material-icons {
@@ -301,4 +303,19 @@ nav ul li.active, nav ul li:hover {
     .chip {
         margin-left: 0.8rem;
     }
+
+    .test{
+    display: inline
+    }
+
+    .explore{
+    position: relative;
+    top: 5px;
+    right: -1px;
+    }
 }
+
+.material-icons {
+position:relative;
+top: 6px;
+left: -1px;}
