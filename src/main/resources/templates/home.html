@@ -54,6 +54,19 @@
     </div>
 </div>
 
+<div>
+    <form name="testform" action="#">
+        <input type="button" value="Click me" name="BtnHello" OnClick="Hello()"/>
+    </form>
+
+</div>
+
+<script LANGUAGE="JavaScript">
+    function Hello() {
+        alert("Hello World!")
+    }
+</script>
+
 <script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>
 <script th:src="@{/vendor/materialize/js/materialize.js}"></script>
 <script th:src="@{/app.js}"></script>
